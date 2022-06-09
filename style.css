@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+  --font-crimson: 'Crimson Pro', serif;
+  --font-lora: 'Lora', serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --background-color: #181719;
+}
+
+body {
+    background-color: var(--background-color);
+}
+.main_container {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    min-width: 810px;
+    padding-bottom: 200px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 116px;
+    align-items: center;
+}
+.logo {
+    padding: 8px;
+    font-family: var(--font-crimson);
+    font-size: 14px;
+    font-weight: 200;
+    border: 1px solid white;
+}
+.fa-arrow-right-long {
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 14px;
+}
+.navbar {
+    width: 40%;
+    min-width: 350px;
+}
+.navbar_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav_item {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 4px;
+}
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -1px;
+    background: white;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    border-bottom: solid 1px white;  
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+.hero_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+}
+.left_container {
+    width: 44%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.title {
+    font-family: var(--font-lora);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 61px;
+}
+.text {
+    font-family: var(--font-montserrat);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 40px;
+    width: 60%;
+    min-width: 400px;
+}
+.read_more {
+    font-family: var(--font-montserrat);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 48px;
+}
+.right_container {
+    width: 56%;
+}
+.main_image {
+    width: 100%;
+    margin: auto;
+}
+.card {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+    -webkit-box-shadow: 0px 6px 15px -3px #000000; 
+    box-shadow: 0px 6px 15px -3px #000000;
+    height: 189px;
+    position: absolute;
+    margin-top: -120px;
+    right: 120px
+}
+.card_image {
+    width: 16%;
+    padding: 10px 10%;
+    border-radius: 50%;
+}
+.card_top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.card_user_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+}
+.card_user_name {
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.card_user_label {
+    color: #828282;
+    font-family: var(--font-montserrat);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 2%;
+
+}
+.card_user_text {
+    width: 70%;
+    font-family: var(--font-lora);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    padding: 10px 10%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--background-color);
+    text-align: center;
+    color: #BDBDBD;
+    position: fixed;
+    bottom: 0;
+}
+.footer_text {
+    margin: 24px 0;
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+.username {
+    text-decoration: underline;
+    font-weight: 700;
+}
