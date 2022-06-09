@@ -26,11 +26,10 @@ body {
     background-color: var(--background-color);
 }
 .main_container {
-    height: 100%;
+    min-height: 92vh;
     width: 90%;
     margin: 0 auto;
     min-width: 810px;
-    padding-bottom: 200px;
 }
 
 header {
@@ -67,6 +66,17 @@ header {
     font-size: 18px;
     line-height: 22px;
     padding-bottom: 4px;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.line {
+    display: block;
+    width: 30px; 
+    height: 3px;
+    background-color: white;
+    margin: 7px 0;
 }
 .underline {
     display: inline;
@@ -127,9 +137,14 @@ header {
     font-size: 18px;
     line-height: 22px;
     padding-top: 48px;
+    width: auto;
+}
+.read_more_text {
+    padding-bottom: 4px;
 }
 .right_container {
     width: 56%;
+    padding-bottom: 100px;
 }
 .main_image {
     width: 100%;
@@ -144,7 +159,7 @@ header {
     box-shadow: 0px 6px 15px -3px #000000;
     height: 189px;
     position: absolute;
-    margin-top: -120px;
+    margin-top: -6%;
     right: 120px
 }
 .card_image {
@@ -192,7 +207,6 @@ footer {
     background-color: var(--background-color);
     text-align: center;
     color: #BDBDBD;
-    position: fixed;
     bottom: 0;
 }
 .footer_text {
@@ -205,4 +219,119 @@ footer {
 .username {
     text-decoration: underline;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1100px) {
+    .left_container {
+        width: 50%;
+    }
+    .right_container {
+        width: 50%;
+        padding-top: 85px;
+    }
+    .title {
+        font-size: 36px; 
+        line-height: 46px;
+    }
+    .text {
+        font-size: 18px;
+    }
+    .card {
+        width: 260px;
+        height: 135px;
+        right: 60px;
+        margin-top: -4%;
+    }
+    .card_user_text {
+        padding: 0 10%;
+        font-size: 16px;
+        line-height: 26px;
+        width: 180px
+    }
+}
+@media only screen and (max-width: 890px) {
+    .main_container {
+        width: 95%;
+        min-width: 0;
+    }
+    header {
+        height: 60px;
+    }
+    .hero_container {
+        flex-direction: column;
+    }
+    .left_container {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .right_container {
+        width: 100%;
+        padding-bottom: 140px;
+    }
+    .text {
+        min-width: 290px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .right_container {
+        padding-top: 30px;
+    }
+    .card {
+        right: 20px;
+        margin-top: -8%;
+    }
+    .text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .read_more {
+        padding-top: 25px;
+    }
+    .read_more_text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .card_user_name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .card_user_label {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .navbar {
+        left: -100%;
+        min-width: 0;
+    }
+    .hamburger {
+        display: block;
+        z-index: 3;
+    }
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger.active .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .navbar_list {
+        display: none;
+    }
+
+    .navbar_list.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--background-color);
+    }
 }
