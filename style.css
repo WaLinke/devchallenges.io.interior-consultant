@@ -77,6 +77,8 @@ header {
     height: 3px;
     background-color: white;
     margin: 7px 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 .underline {
     display: inline;
