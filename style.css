@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
 body {
     color: white;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 :root {
   --font-crimson: 'Crimson Pro', serif;
   --font-lora: 'Lora', serif;
@@ -31,7 +27,6 @@ body {
     margin: 0 auto;
     min-width: 810px;
 }
-
 header {
     display: flex;
     flex-direction: row;
@@ -51,11 +46,9 @@ header {
     padding-top: 2px;
     padding-left: 14px;
 }
-.navbar {
+.navbar_list {
     width: 40%;
     min-width: 350px;
-}
-.navbar_list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -193,7 +186,6 @@ header {
     font-size: 12px;
     line-height: 15px;
     padding-top: 2%;
-
 }
 .card_user_text {
     width: 70%;
@@ -203,15 +195,12 @@ header {
     line-height: 31px;
     padding: 10px 10%;
 }
-
 footer {
     width: 100%;
     background-color: var(--background-color);
     text-align: center;
     color: #BDBDBD;
     bottom: 0;
-}
-.footer_text {
     margin: 24px 0;
     font-family: var(--font-montserrat);
     font-size: 14px;
@@ -301,10 +290,6 @@ footer {
     .card_user_label {
         font-size: 10px;
         line-height: 12px;
-    }
-    .navbar {
-        left: -100%;
-        min-width: 0;
     }
     .hamburger {
         display: block;
